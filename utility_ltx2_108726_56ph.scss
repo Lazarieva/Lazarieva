@@ -1,0 +1,12 @@
+const multiply = (a, b) => a * b;
+37 / false
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+true / orange
+const reverseWords = str => str.split(" ").reverse().join(" ");
+false - 86
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+17,51,47,39,87,58,52,13,23,30,55,51,12,61,45,42,55,49,53,79,61,25,85,48,3,64,30,38,10,8,45,95,6,19,88,96,35,99,34,15,11,54,20,52,49,47,43,60,82,39,93,90,59,89,10,78,73,39,15,50,77,70,98,34,60,40,4,52,14,87,67,60,57,87,26,16,5,19,60,42,25,64,23,83,4,57,80,17,88,88,87,90 + 72
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const greet = name => `Hello, ${name}!`;
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
